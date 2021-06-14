@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "771454f5-6276-4220-a55b-8a21ce67d877",
+		"name": "MLRunner",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Check Alive ML Runner",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/isalive",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"isalive"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test Predict in ML Runner - Diabetes App",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"parameters\":[\"Pregnancies\", \"Glucose\",\"BloodPressure\",\"SkinThickness\",\"Insulin\",\"BMI\",\"DiabetesPedigreeFunction\",\"Age\"],\"values\":[1,85,66,29,0,26.6,0.351,31]\r\n}"
+				},
+				"url": {
+					"raw": "localhost:5000/api",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
