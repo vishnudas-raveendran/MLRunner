@@ -4,5 +4,5 @@ COPY ./requirements.txt /deploy/
 COPY ./DiabetesPredModel.pkl /deploy/
 WORKDIR /deploy/
 RUN pip install -r requirements.txt
-EXPOSE 80
+EXPOSE 5000
 ENTRYPOINT ["python", "server.py"]
