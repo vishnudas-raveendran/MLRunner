@@ -2,6 +2,10 @@
 
 Basic python Flask app for running ML models
 
+Parameterizes the data and the model. So, one can specify the input types, output types in a config file. 
+
+A UI is then auto-generated based on that, users can then share the application with others for testing the ML model
+
 ## Pre-requisites
 - [Docker](https://www.docker.com/)
 - [Postman (Optional)](https://www.postman.com/)
